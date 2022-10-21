@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+:root {
+  /* FONTS */
+  --ff-prmy: "Open Sans", sans-serif;
+
+  --fs-sm-prmy: 0.75rem;
+  --fs-sm-sec: 0.75rem;
+  --fs-prmy: 1rem;
+  --fs-sec: 1.25rem;
+  --fs-tri: 2rem;
+  --fs-four: 2.25rem;
+
+  --fw-prmy: 400;
+  --fw-sec: 500;
+  --fw-tri: 700;
+
+  /* COLOURS */
+  --col-text-prmy: hsl(238, 100%, 5%);
+  --col-text-sec: hsl(260, 5%, 75%);
+  --col-text-tri: hsl(225, 18%, 96%);
+
+  --col-background-prmy: hsl(50, 75%, 98%);
+  --col-background-sec: hsl(0, 0%, 100%);
+  --col-background-tri: hsl(240, 9%, 91%);
+
+  --col-acc-prmy: hsl(4, 79%, 61%);
+  --col-acc-sec: hsl(36, 77%, 59%);
+  --col--acc-tri: hsl(238, 100%, 5%);
+
+  /* box Shadows */
+  --box-shadow: 18px 14px 33px -7px rgba(0, 0, 0, 0.07);
+
+  /* border radius */
+  --border-radius-prmy: 10px;
+  --border-radius-sec: 20px;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+
+  font-family: var(--ff-prmy);
+  font-size: var(--fs-prmy);
+  font-weight: var(--fw-prmy);
+
+  background-color: var(--col-background-prmy);
+  color: var(--col-text-prmy);
+  padding: 1em;
+}
